@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <div id="results">
+
+    </div>
+
+    <script id="template" type="text/x-handlebars-template">
+      {{#list people}}
+        {{#if firstName}}
+          {{firstName}} {{lastName}} {{> somePartial}}
+        {{/if}}
+      {{/list}}
+    </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="./index.js"></script>
+  <body>
+</html>
